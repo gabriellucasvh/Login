@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <title>Login</title>
+</head>
+
+<body>
+  <section class="container">
+    <section class="login">
+      <h2>Login</h2>
+      <form class="login--form">
+        <label>Email</label>
+        <input type="email" placeholder="Seu Email" />
+        <label>Senha</label>
+        <div class="input-container">
+          <input id="password" type="password" placeholder="Sua senha" maxlength="16" minlength="8" required />
+          <button type="button" class="toggle-password" onclick="togglePassword()">
+            <i class="fa-solid fa-eye" style="color: #000000;"></i>
+          </button>
+        </div>
+        <button class="enviar" type="submit">Enviar</button>
+        <div class="conexoes">
+          <span>ou</span>
+          <div class="google">
+            <i class="fa-brands fa-google" style="color: #000000"></i>
+            <a href="https://www.google.com" target="_blank">Entrar com o Google</a>
+          </div>
+          <div class="facebook">
+            <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+            <a href="https://www.facebook.com">Entrar com o Facebook</a>
+          </div>
+        </div>
+      </form>
+    </section>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
